@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
-#include<time.h>
+#include <time.h>
 
 int main(void)
 {
@@ -20,14 +20,16 @@ int main(void)
  for (i=0;i<n;printf("%6d",f[i++]));
  for(i=0;i<n;i++)
  {
-    if(f[i]>max) {
-	    max=f[i];
-		  imax=i;	
-	} 
-    if(f[i]<min){
-    	min=f[i];
-    	imin=i;
-	}  
+    if(f[i]>max)
+    {
+      max=f[i];
+      imax=i;	
+    } 
+    if(f[i]<min)
+    {
+      min=f[i];
+      imin=i;
+     }  
  } 
  printf("\n%d  %d %d %d", max, min,imax,imin);
  puts("\n");
